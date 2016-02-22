@@ -1,0 +1,2 @@
+# chainson
+Chainable JSON Encoder
