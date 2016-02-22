@@ -1,4 +1,7 @@
-from distutils.core import setup
+try:
+    from setuptools import setup
+except ImportError:
+    from distutils.core import setup
 
 setup(
     name='Chainson',
@@ -8,5 +11,6 @@ setup(
     license='Apache License 2.0',
     author='Shiqiao Du',
     author_email='lucidfrontier.45@gmail.com',
-    description='Chainable JSON Encoder'
+    description='Chainable JSON Encoder',
+    install_requires=["six", "future"]
 )
