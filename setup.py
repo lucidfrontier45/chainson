@@ -7,7 +7,7 @@ setup(
     name='Chainson',
     version='0.2',
     packages=['chainson'],
-    url='',
+    url='https://github.com/lucidfrontier45/chainson',
     license='Apache License 2.0',
     author='Shiqiao Du',
     author_email='lucidfrontier.45@gmail.com',
