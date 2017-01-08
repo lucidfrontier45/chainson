@@ -2,17 +2,15 @@ from __future__ import absolute_import
 
 from abc import ABCMeta, abstractmethod
 from datetime import datetime
-from json import JSONEncoder as JSONEncoder, dump, dumps
+from json import JSONEncoder, dump, dumps
 
 from future.builtins import super
 from six import add_metaclass
 
 
 class JSONEncoderChain(JSONEncoder):
-    def __init__(self, skipkeys=False, ensure_ascii=True,
-                 check_circular=True, allow_nan=True, sort_keys=False,
-                 indent=None, separators=None, default=None):
-        super().__init__(skipkeys, ensure_ascii, check_circular, allow_nan, sort_keys, indent, separators, default)
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
         self._encoders = []
 
     def add_encoder(self, encoder):
