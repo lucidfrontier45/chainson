@@ -5,7 +5,7 @@ except ImportError:
 
 setup(
     name='Chainson',
-    version='0.1',
+    version='0.2',
     packages=['chainson'],
     url='',
     license='Apache License 2.0',
